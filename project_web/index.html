@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NT_B5_G14</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/ryu.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Active
+  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+         <h1>SDN Project</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#about-2">About</a></li>
+          <li><a href="#services">Key Features</a></li>
+          <li><a href="#tabs">Technologies</a></li>
+          <li><a href="#pricing">Documents</a></li>
+          <li><a href="#testimonials">Team</a></li>
+            <!--<ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>-->
+          </li>
+          <!--<li><a href="contact.html">Contact</a></li>-->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": false,
+                  "speed": 600,
+
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/SDN_topo.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/ML.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-1">
+            <!--<span class="section-subtitle" data-aos="fade-up">Welcome</span>-->
+            <h1 class="mb-4" data-aos="fade-up">
+              Intelligent Traffic. 
+              Adaptive Networks. 
+              Enhanced Performance.
+            </h1>
+            <p data-aos="fade-up">
+              This research presents an intelligent approach to modern network traffic management by integrating Machine Learning with Software-Defined Networking to dynamically classify traffic and enhance Quality of Service (QoS).
+            </p>
+            <p class="mt-5" data-aos="fade-up">
+              <a href="#" class="btn btn-get-started" onclick="openVideo()">Watch Video</a>
+            </p>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+
+            <!-- Video Modal -->
+            <div class="videoModal">
+            <div class="close-btn">
+              <span onclick="closeVideo()">✖</span>
+            </div>
+            <iframe class="driveVideo" src="" allow="autoplay" allowfullscreen></iframe>
+            </div>
+            <script>
+                function openVideo() {
+                const fileId = "1ARx-2IpytsRCrYXKzmPztFE6Di_VApZB"; // Replace with actual file ID
+                const src = `https://drive.google.com/file/d/${fileId}/preview`;
+                document.querySelector('.driveVideo').src = src;
+                document.querySelector('.overlay').style.display = 'block';
+                document.querySelector('.videoModal').style.display = 'block';
+                }
+
+              function closeVideo() {
+              document.querySelector('.driveVideo').src = "";
+              document.querySelector('.videoModal').style.display = 'none';
+              document.querySelector('.overlay').style.display = 'none';
+                }
+            </script>
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- About 2 Section -->
+    <section id="about-2" class="about-2 section light-background">
+
+      <div class="container">
+        <div class="content">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                <div class="img">
+                  <img src="assets/img/about2.jpg" alt="circle image" class="img-fluid" style="margin-bottom: -500px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+              <div class="px-3">
+                <!--<span class="content-subtitle">Our Mission</span>-->
+                <h2 class="content-title text-start">
+                  ABOUT OUR RESEARCH
+                </h2>
+                <p class="mb-5">
+                  Our research focuses on enhancing Quality of Service (QoS) in modern networks using Machine Learning-based traffic classification within 
+                  a Software-Defined Networking (SDN) environment. Traditional networks struggle to manage increasing traffic 
+                  complexity — especially with encrypted and dynamic data flows. To address this, we built an intelligent system that classifies network traffic in real time using deep learning models and applies adaptive QoS rules through the SDN controller. 
+                  This ensures optimized bandwidth allocation, reduced latency, and smarter traffic prioritization.
+                  By integrating SDN programmability with the predictive power of machine learning, our work represents a significant step toward more efficient, scalable, and intelligent network management.
+                </p>
+                <p>
+                  <a href="#" class="btn-get-started">Get Started</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About 2 Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <h2> KEY FEATURES </h2>
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up">
+              <div class="services-icon">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <div>
+                <h3>SDN Based Netwrok</h3>
+                <p>A network where a central software controller manages traffic flow and network devices dynamically for better control and flexibility </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="services-icon">
+                <i class="bi bi-command"></i>
+              </div>
+              <div>
+                <h3>Traffic Classification</h3>
+                <p>The process of identifying and categorizing network traffic based on its characteristics to manage and optimize data flow. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="services-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div>
+                <h3>Adaptive QoS Enahncement</h3>
+                <p>Automatically adjusts network Quality of Service settings to improve performance based on real-time traffic conditions.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              
+               <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/gene.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/ML.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                 <img src="assets/img/QoS.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                 <img src="assets/img/line1.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                 <img src="assets/img/line2.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 ps-lg-5">
+            <!--<span class="content-subtitle">Why Us</span>-->
+            <h2 class="content-title">Why this research matters more than ever</h2>
+            <p class="lead">
+            </p>
+            <p class="mb-5">
+              Enhancing QoS using machine learning-based traffic classification is crucial today due to the growing complexity and volume of internet traffic. Traditional methods struggle with encrypted and diverse traffic types, while ML can intelligently and dynamically identify traffic patterns, enabling networks to prioritize critical services, reduce latency, and improve user experience. Combined with SDN, ML allows real-time, automated, and adaptive QoS management, making networks more efficient, secure, and responsive to modern demands.
+            </p>
+            <div class="row mb-5 count-numbers">
+            
+              <!-- Start Stats Item -->
+              <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
+                <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="3919" data-purecounter-duration="1" class="purecounter number"></span>
+                <span class="d-block">Coffee</span>
+              </div>
+              <!-- End Stats Item -->
+
+              <!-- Start Stats Item -->
+              <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
+                <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2831" data-purecounter-duration="1" class="purecounter number"></span>
+                <span class="d-block">Codes</span>
+              </div>
+              <!-- End Stats Item -->
+
+              <!-- Start Stats Item -->
+              <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
+                <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1914" data-purecounter-duration="1" class="purecounter number"></span>
+                <span class="d-block">Projects</span>
+              </div>
+              <!-- End Stats Item -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Stats Section -->
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs section light-background">
+
+      <div class="container">
+        <h2> TECHNOLOGIES</h2>
+        <div class="row gap-x-lg-4 justify-content-between">
+          <div class="col-lg-4 js-custom-dots">
+            <a href="#" class="service-item link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+              <div class="service-icon color-1 mb-4">
+                <i class="bi bi-alarm"></i>
+              </div>
+              <div class="service-contents">
+                <h3>Mininet</h3>
+                <p>
+                  Light Weight SDN Emulator.
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="100">
+              <div class="service-icon color-2 mb-4">
+                <i class="bi bi-bag-check"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>PyTorch</h3>
+                <p>
+                  Open-source deep learning framework.
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="200">
+              <div class="service-icon color-3 mb-4">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>OpenFlow v1.3</h3>
+                <p>
+                  Protocol that lets SDN controllers control network switches directly.
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
+              <div class="service-icon color-4 mb-4">
+                <i class="bi bi-easel"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Plotly</h3>
+                <p>
+                  Interactive web based dashboard visualizer.
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+          </div>
+
+          <div class="col-lg-8">
+            <div class="swiper init-swiper-tabs">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoHeight": true,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!--<img src="assets/img/img_h_1.jpg" alt="Image" class="img-fluid">-->
+                  <div class="p-4">
+                    <h3 class="text-black h5 mb-3"></h3>
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <p>
+                          Mininet is a lightweight network emulator that creates a realistic virtual network using software. It allows you to simulate networks with hosts, switches, links, and controllers—all on a single machine. Widely used for testing and developing Software-Defined Networking (SDN) applications, Mininet provides a simple, flexible environment for rapid prototyping and experimentation.
+                        </p>
+                      </div>
+                      <div class="col-lg-4">
+                        <!--
+                        <ul class="list-unstyled list-check">
+                          <li>Far far away, behind the word</li>
+                          <li>Far from the countries Vokalia</li>
+                          <li>Separated they live in Bookmarksgrove</li>
+                        </ul>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/torch.webp" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide align-left">
+                  <img src="assets/img/of1 - Edited.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide margin-bottom">
+                  <img src="assets/img/plotly.webp" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Tabs Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Documents</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+          <!--
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div> End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item recommended">
+              <!--<span class="recommended-badge">Recommended</span>-->
+              <h3>Project Proposal</h3>
+              <img src="assets/img/pdf.png" alt="Image" class="img-fluid" width="75px" height="150px">
+              <div class="btn-wrap">
+                <a href="https://drive.google.com/file/d/1eD03_74HtP-xuT55774UL9FZu9GeU8QV/view?usp=drive_link" class="btn-buy">Download</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Project Thesis</h3>
+              <img src="assets/img/pdf.png" alt="Image" class="img-fluid" width="75px" height="150px">
+              <div class="btn-wrap">
+                <a href="https://drive.google.com/file/d/1qhJBSxvDbkQPL0kRn2NJUwZVQGZj7VKF/view?usp=drive_link" class="btn-buy">Download</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/sakitha.png" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Sakitha De Silva</h3>
+                    <blockquote>
+                      <p> Main Supervisor </p>
+                      <p> Visiting Lecturer </p>
+                      <p> Department of Information and Communication Technology </p>
+                      <p> Faculty of Technology </p>
+                      <p> University of Sri Jayewardenepura </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/thath.png" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">J.K.K.H Thathsarani</h3>
+                    <blockquote>
+                      <p> Co Supervisor </p>
+                      <p> Demonstrator </p>
+                      <p> Department of Information and Communication Technology </p>
+                      <p> Faculty of Technology </p>
+                      <p> University of Sri Jayewardenepura </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/aritha.png" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Aritha Hansala</h3>
+                    <blockquote>
+                      <p> Team Member </p>
+                      <p> Department of Information and Communication Technology </p>
+                      <p> Faculty of Technology </p>
+                      <p> University of Sri Jayewardenepura </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/din.png" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Dinindu Kaushalya</h3>
+                    <blockquote>
+                      <p> Team Member </p>
+                      <p> Department of Information and Communication Technology </p>
+                      <p> Faculty of Technology </p>
+                      <p> University of Sri Jayewardenepura </p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure class="img-wrap">
+                      <img src="assets/img/yama.png" alt="Image" class="img-fluid">
+                    </figure>
+                    <h3 class="name">Bathiya</h3>
+                    <blockquote>
+                      <p> Team Member </p>
+                      <p> Department of Information and Communication Technology </p>
+                      <p> Faculty of Technology </p>
+                      <p> University of Sri Jayewardenepura </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">About Us</h3>
+            <p class="mb-4">
+              Final year undergraduates of Faculty of Technology University of Sri Jayewardenepura.
+            </p>
+            <p class="mb-0">
+              <a href="#" class="btn-learn-more">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">Navigation</h3>
+            <ul class="list-unstyled float-start me-5">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <!--
+            <ul class="list-unstyled float-start">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>-->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Recent Posts</h3>
+            <ul class="list-unstyled footer-blog-entry">
+              <li>
+                <span class="d-block date">May 3, 2025</span>
+                <a href="#">Meet the Netwrok That Thinks</a>
+              </li>
+              <li>
+                <span class="d-block date">April 15, 2025</span>
+                <a href="#">Learn more about SDN + ML</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Connect</h3>
+            <ul class="list-unstyled social-icons light mb-3">
+              <li>
+                <a href="#"><span class="bi bi-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-twitter-x"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi bi-google-play"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <div class="footer-subscribe">
+              <h3 class="widget-heading">Subscribe</h3>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="mb-2">
+                  <input type="text" class="form-control" name="email" placeholder="Enter your email">
+
+                  <button type="submit" class="btn btn-link">
+                    <span class="bi bi-arrow-right"></span>
+                  </button>
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your subscription request has been sent. Thank you!
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Active.</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
